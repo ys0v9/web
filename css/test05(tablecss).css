@@ -1,0 +1,51 @@
+body {
+    color: #444444;
+    font-size: 12px;
+    font-family: 'BM Hanna Air';
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    height: 60px;
+    vertical-align: top;
+}
+
+td {
+    width: 76px;
+    padding: 5px;
+}
+
+#date {
+    margin-top: 10px;
+    margin-left: 210px;
+    font-size: 14px;
+    display: flex;
+    list-style-type: none;
+}
+
+#calendar {
+    margin-top: 15px;
+    border-top: 2px solid #aaa ;
+}
+
+#day {
+    height: 20px;
+    background-color: rgb(234, 234, 234);
+    font-weight: bold;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}

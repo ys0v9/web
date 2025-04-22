@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+#container {
+    width: 600px;
+    margin: 20px auto;
+}
+
+h1{
+    display: inline-block;
+    background-color: #0404aa;
+    color: #fff;
+    /*font-family: "함초롬 돋움", "배달의민족 주아";*/
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.accent {
+    font-weight: bold;
+    color: red;
+}
+
+.fsize {
+    /*font-size: 20px; */
+    /*font-size: 1.5em; */
+    font-size: 1.5rem;
+    /* font-style: italic; */
+    font-weight: bold;
+    /* font-weight: lighter; */
+    color: rgb(240, 148, 60, 0.5)
+}

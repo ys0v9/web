@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아리 지원 폼</title>
+</head>
+<body>
+    <h1>3D 동아리 지원 폼</h1>
+    <form action="/submit-form" method="post">
+        <!-- 기본 정보 -->
+        <label for="name">이름: </label>
+        <input type="text" id="name" name="name" minlength='2' placeholder="최수아" required><br><br>
+
+        <label for="student_id">학반번호: </label>
+        <input type="text" id="student_id" name="student_id" placeholder="예시: 1404" required><br><br>
+
+        <label for="phone">전화번호: </label>
+        <input type="tel" id="phone" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="예시: 010-1234-5678" required><br><br>
+
+        <label for="email">이메일: </label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- 전공 및 관심 분야 -->
+        <label for="major">전공(미정 가능): </label>
+        <input type="text" id="major" name="major" required><br><br>
+
+        <label for="interest">동아리에서 배우고 싶은 분야 또는 관심 분야: </label>
+        <select id="interest" name="interest" required>
+            <option value="game_development">게임</option>
+            <option value="backend">백엔드</option>
+            <option value="modeling">모델링</option>
+            <option value="vrxr">VR/XR</option>
+            <option value="미정">미정</option>
+        </select><br><br>
+
+        <label for="subject">좋아하는 과목: </label>
+        <input type="subject" id="subject" name="subject" required><br><br>
+
+        <!-- 지원 동기 -->
+        <label for="reason">지원 동기: </label><br>
+        <textarea id="reason" name="reason" rows="10" cols="50" required></textarea><br><br>
+
+        <!-- 가능한 기술 -->
+        <label for="technique">가능한 기술: </label><br>
+        <textarea id="technique" name="technique" 
+        placeholder='가능한 모든 기술과 각각의 수준 적어주세요.' rows="7" cols="50" required></textarea><br><br>
+
+        <!--취미, 관심사-->
+        <label for="habit">취미 또는 관심사</label><br>
+        <textarea id="habit" name="habit" rows="7" cols="50"
+         placeholder="무엇이든지 편하게 적어주세요.(예시: 게임 OOO를 좋아하고 애니메이션 XXX 보는걸 좋아해요!)" required></textarea><br><br>
+
+        <!--선배들한테 하고 싶은 말-->
+        <label for="reason">선배들한테 하고 싶은 말: </label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+        <!--초기화 버튼-->
+        <button type="reset">재작성</button><br><br>
+
+        <!-- 제출 버튼 -->
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>

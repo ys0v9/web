@@ -1,0 +1,71 @@
+header ul li {
+    display: inline;
+}
+
+header ul {
+    float: right;
+}
+
+body{
+    margin: 0px;
+}
+
+header img {
+    float: left;
+}
+
+nav > ul{
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    padding: 0px;
+    clear: both;
+    margin-bottom:0px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+#nav_sub img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+    position: absolute;
+    right: 100px;
+    top: 48px;
+    box-shadow: 10px 5px 10px 3px gainsboro;
+}
+
+#nav_sub {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-image: url("https://image.kmib.co.kr/online_image/2018/0821/611211110012618663_1.jpg");
+    /* background-repeat: repeat-y; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:antiquewhite;
+    /* border: 5px dotted; */
+    /* padding: 20px; */
+    background-origin: content-box;
+    background-position: center;
+}
+
+#pos {
+    position: absolute;          
+    right: 175px;
+    top: 200px;
+
+    color: rgba(255, 239, 210, 0.898);     
+
+    /* -webkit-text-stroke: 0.5px;   */
+    /* -webkit-text-stroke-color: black; */
+
+    text-shadow: 2px 2px 4px gray;
+    font-family: "함초롬 돋움", "배달의민족 주아";
+}

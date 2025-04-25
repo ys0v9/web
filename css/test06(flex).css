@@ -6,9 +6,10 @@
 header {
     position: fixed;
     z-index: 9999;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0);
     width: 100%;
     top: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 .logo {
@@ -56,8 +57,17 @@ body {
     font-size: 150px;
     position: relative;
     z-index: 2;
-    color:#eee;
     font-family: "Bahiana", sans-serif;
+    background: linear-gradient(90deg, #67d32d, #D0DE3F, #3dec1e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: gradientEffect 2.5s infinite linear;
+}
+
+@keyframes gradientEffect {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
 
 .container {
@@ -78,13 +88,21 @@ body {
 
 .box {
     border: #74D820 solid 2px;
-    margin: 7px;
+    margin: 13px;
     width: 323px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     /* display: flex;
     justify-content: center; */
     text-align: center;
+}
+
+.box img {
+    transition: transform 0.32s ease-in-out;
+}
+
+.box:hover img {
+    transform: scale(1.07); 
 }
 
 img {
@@ -119,4 +137,5 @@ button{
 
 button:hover{
     background-color: #2F4D21;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
 }

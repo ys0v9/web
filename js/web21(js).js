@@ -10,4 +10,14 @@
 // document.writeln("<h1>안녕하세요</h1>")
 // document.writeln("안녕하세요");
 
-console.log("안녕하세요")
+// console.log("안녕하세요")
+
+// let width = 200;
+// let height = 50;
+// let area = width * height;
+// console.log(area);
+
+const PI = 3.14;
+let r = prompt("반지름을 입력하세요.");
+let area = PI * r ** 2;
+console.log(area);

@@ -69,7 +69,78 @@
 // }
 
 
-for (let i = 2; i<10; i++) {
-    for (let j=1; j<10; j++)
-        console.log(i+'*'+j+'='+i*j)
-}
+// for (let i = 2; i<10; i++) {
+//     for (let j=1; j<10; j++)
+//         console.log(`${i} * ${j} = ${i*j}`)
+// }
+
+// let stars = parseInt(prompt('몇 개의 별을 표시할까요?'));
+//     while (stars > 0) {
+//         document.writeln('*');
+//         stars--;
+//     }
+
+// let stars2 = parseInt(prompt('몇 개의 별을 표시할까요?'));
+//     do {
+//         document.write('*');
+//         stars2--;
+//     }while (stars2>0);
+
+// let n = parseInt(prompt('숫자를 입력해 주세요.'));
+// let cnt = 0;
+// let a = 1;
+
+// if (n != null) {
+//     while (a <= n) {
+//         if (a % 3 === 0) {
+//             document.write(a + " ");
+//             cnt++;
+//         }
+//         a++;
+//     }
+//     document.write("<br>");
+//     document.write(`3의 배수의 개수는 ${cnt}개`);
+// } else {
+//     console.log('입력이 취소됐습니다.');
+// }
+
+// function addNumber() {
+//     let num1 = 2;
+//     let num2 = 3;
+//     let sum = num1 + num2;
+//     console.log(`결괏값: ${sum}`);
+// }
+// addNumber();
+// addNumber();
+
+// var sum = 0; // 전역 변수 선언
+// function addNumber() {
+//     // var result; //지역 변수 선언
+//     sum = 10 + 20;
+//     result = 10 * 20;
+// }
+// addNumber();
+// console.log(sum);
+// console.log(result)
+
+// var x = 10; //전역 변수 선언
+// function displayNumber() {
+//     //var y; 이거랑
+//     console.log(`x is ${x}`);
+//     console.log(`y is ${y}`);
+//     var y = 20; //지역 변수 선언 및 값 할당
+//     //let y = 20; << 오류
+//     //y = 20; 이거는 var y = 20;이랑 같다.
+// }
+// displayNumber();
+
+var a = 3;
+var a = 5; //재선언
+a = 5; //재할당
+console.log(a);
+
+// 오류 (let은 같은 이름으로 재선언 불가능)
+// let b = 4; 
+// let b = 5;
+// 그러나 할당은 가능
+// b = 5;

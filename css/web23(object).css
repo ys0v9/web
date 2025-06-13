@@ -1,0 +1,8 @@
+.bookdate {
+    width: 30vw;
+    height: 30vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    background-color: aquamarine;
+}

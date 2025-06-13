@@ -134,13 +134,38 @@
 // }
 // displayNumber();
 
-var a = 3;
-var a = 5; //재선언
-a = 5; //재할당
-console.log(a);
+// var a = 3;
+// var a = 5; //재선언
+// a = 5; //재할당
+// console.log(a);
 
 // 오류 (let은 같은 이름으로 재선언 불가능)
 // let b = 4; 
 // let b = 5;
 // 그러나 할당은 가능
 // b = 5;
+
+// function multiple(a, b = 5, c = 10) {
+//     return a * b + c;
+// }
+
+// console.log(multiple(5,10,20)); // a = 5, b = 10, c = 20
+// console.log(multiple(10,20)); // a = 10, b = 20, c = 10(기본값)
+// console.log(multiple(30)); //a = 30, b = 5(기본값), c = 10(기본값)
+
+// // 익명 함수
+// let sum = function(a,b) {
+//     return a + b;
+// }
+// console.log(`함수 실행 결과: ${sum(10,20)}`)
+
+// // 즉시 실행 함수 (매개 변수 O)
+// (function(a, b){ // 함수 선언을 위한 매개변수
+//     sum = a + b;
+// }(100, 200)); //마지막에 함수 실행을 위한 인수
+// console.log(`함수 실행 결과 : ${sum}`);
+
+
+let sum = (a,b) => a + b;
+
+console.log(`함수 실행 결과: ${sum(10,20)}`)

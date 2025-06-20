@@ -25,4 +25,9 @@ let b_top = window.screenY;
 b_left = b_left + 100;
 b_top = b_top + 100;
 
-window.open("popup.html", "공지", `width=500, height=500, left=${b_left}, top=${b_top}`);
+function win() {
+    let wini = window.open("popup.html", "공지", `width=500, height=500, left=${b_left}, top=${b_top}`);
+    if (wini == null){
+        alert("팝업이 차단되었습니다.")
+    }
+}
